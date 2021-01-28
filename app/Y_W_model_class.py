@@ -33,7 +33,7 @@ def remove_HTML_punc_lower_stop_l(text):
     #function to convert a title or self text into a single string
 
     #1.Remove HTML
-    rtext = BeautifulSoup(text).get_text()
+    rtext = BeautifulSoup(text, features="lxml").get_text()
 
     #2. Remove non-letters
     letters_only = re.sub('[^a-zA-Z]',' ', rtext)
