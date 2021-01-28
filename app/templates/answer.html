@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"> </a>
+    <img src="/static/yoga.png" alt="" width="40" height="40">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="navbar-brand" href="{{url_for('home')}}">Home</a>
+      </div>
+  </nav>
+  <div class="card mb-3" style="max-width: 1500px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <img src="/static/wakeupworkout.jpg" alt="" width="500" height="500">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h3 class="card-title" style="color:#c25b08; font-family:Anaktoria">Yoga vs. Weightlifting</h3>
+        <form method="GET">
+          <div class="mb-3">
+             <label for="reddit_submission" class="form-label" style="color:#c25b08; font-family:Anaktoria">Please input the Reddit post you'd like to classify</label>
+             <textarea <input type="text" class="form-control" name="reddit_submission" id="reddit_submission" rows="10"> </textarea>
+         </div>
+         <p></p>
+          <div class="col-12">
+            <button class="btn btn-primary" type="submit">Submit</button>
+          </div>
+        </form>
+
+   </div>
+       </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  </body>
+</html>
