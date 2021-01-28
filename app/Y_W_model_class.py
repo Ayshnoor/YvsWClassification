@@ -13,12 +13,12 @@ from nltk.corpus import stopwords
 
 def y_w_model(reddit_submission):
     #open RF model
-    with gzip.open('./code/Y_W_model.pkl', 'rb') as file:
+    with gzip.open('code/Y_W_model.pkl', 'rb') as file:
         p = pickle.Unpickler(file)
         y_w_model = p.load()
 
     #open vectorizer
-    cv = pickle.load(open('./code/vector.pickle', 'rb'))
+    cv = pickle.load(open('code/vector.pickle', 'rb'))
 
     if reddit_submission:
         X = reddit_submission
